@@ -35,9 +35,9 @@ steps:
 
   - task: PublishBuildArtifacts@1
 
-#  - task: AzureRmWebAppDeployment@3
-#    inputs:
-#      azureSubscription: <Azure service endpoint>
-#      WebAppName: <Azure web app>
-#      Package: '$(System.ArtifactsDirectory)/**/*.zip'
-#      TakeAppOfflineFlag: true
+  - task: AzureRmWebAppDeployment@3
+    inputs:
+      azureSubscription: 'AzureSub'
+      WebAppName: 'ProductsTestInAzure'
+      Package: '$(System.ArtifactsDirectory)/**/*.zip'
+      TakeAppOfflineFlag: true
