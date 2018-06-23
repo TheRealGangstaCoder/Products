@@ -12,7 +12,7 @@ namespace Product.Api.Tests
         {
             var prodController = new ProductsController();
             var products = prodController.Get();
-            Assert.IsTrue(products.Count() == 3);
+            Assert.IsTrue(products.Count() == 2);
         }
     }
 }
