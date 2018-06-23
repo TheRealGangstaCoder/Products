@@ -37,7 +37,8 @@ steps:
 
   - task: AzureRmWebAppDeployment@3
     inputs:
-      azureSubscription: 'Free Trial (bff03a94-0bc4-4293-9a29-df78beff6786)'
+      connectionType: 'AzureRM'
+      azureSubscription: 'Free Trial'
       WebAppName: 'ProductsTestInAzure'
       Package: '$(System.ArtifactsDirectory)/**/*.zip'
       TakeAppOfflineFlag: true
