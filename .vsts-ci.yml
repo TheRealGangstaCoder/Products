@@ -39,6 +39,6 @@ steps:
     inputs:
       connectionType: 'AzureRM'
       azureSubscription: 'Azure1'
-      WebAppName: 'ProductsTestInAzure'
+      WebAppName: 'ProdTestAzure'
       Package: '$(System.ArtifactsDirectory)/**/*.zip'
       TakeAppOfflineFlag: true
